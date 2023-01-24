@@ -4,29 +4,28 @@ public class Cuadrado {
 	public int ID;
 	public float f;
 	
-	public Cuadrado()
-	{
-		ID = 175992;
+	public Cuadrado() {
+		this(175992);
+	}
+
+	public Cuadrado(int ID) {
+		this.ID = ID;
 	}
 	
-	public float calcDiag()
-	{
+	public float calcDiag() {
 		f = ID;
-		return (float) Math.sqrt(f + f);
+		return (float) Math.sqrt(2*f*f);
 	}
 	
-	public int calcPeri()
-	{
+	public int calcPeri() {
 		return ID*4;
 	}
 	
-	public int calcArea()
-	{
+	public int calcArea() {
 		return ID*ID;
 	}
 
-	public void cambLong(int lado)
-	{
+	public void cambLong(int lado) {
 		ID = lado;
 	}
 
