@@ -1,28 +1,25 @@
 
 public class Circulo {
-
-	public int rad;
-	public float d;
+	
+	public double rad;
 	
 	public Circulo() {
 		this(175992);
 	}
 	
-	public Circulo(int rad) {
+	public Circulo(double rad) {
 		this.rad = rad;
 	}
 	
-	public float calcCircunf() {
-		d = rad;
-		return (float) (2*3.14*d);
+	public double calcCircunf() {
+		return (2*3.14*rad);
 	}
 
-	public float calcAreaCirc() {
-		d = rad;
-		return (float) 3.14*d*d;
+	public double calcAreaCirc() {
+		return (3.14*rad*rad);
 	}
 	
-	public void cambRadio(int radio) {
+	public void cambRadio(double radio) {
 		rad = radio;
 	}
 }

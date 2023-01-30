@@ -1,32 +1,29 @@
 
 public class Cuadrado {
 	
-	public int ID;
-	public float f;
-	
+	public double ID;
+		
 	public Cuadrado() {
 		this(175992);
 	}
 
-	public Cuadrado(int ID) {
+	public Cuadrado(double ID) {
 		this.ID = ID;
 	}
 	
-	public float calcDiag() {
-		f = ID;
-		return (float) Math.sqrt(2*f*f);
+	public double calcDiag() {
+		return Math.sqrt(2*ID*ID);
 	}
 	
-	public int calcPeri() {
+	public double calcPeri() {
 		return ID*4;
 	}
 	
-	public int calcArea() {
+	public double calcArea() {
 		return ID*ID;
 	}
 
-	public void cambLong(int lado) {
+	public void cambLong(double lado) {
 		ID = lado;
 	}
-
 }
